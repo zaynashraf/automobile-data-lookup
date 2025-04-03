@@ -255,7 +255,7 @@ public class Main extends JFrame implements ActionListener, ChangeListener
         System.out.println("Driver loaded");
 
         Connection connection = DriverManager.getConnection
-                ("jdbc:mysql://localhost/Auto", "testuser", "greatbutter494");
+                ("jdbc:mysql://localhost/Auto", "root", "greatbutter494");
         System.out.println("Database connected");
 
         Statement statement = connection.createStatement();

@@ -12,35 +12,42 @@ Dynamic Search Functionality: Allows users to search for specific car entries ba
 Data Import: Reads automobile data from a file and inserts it into the database.
 
 ## Setup Instructions
-Prerequisites
+### Prerequisites
 Install Java (JDK 8 or later)
 
 Install MySQL
 
 Install MySQL Connector and place it in your project's file path
 
-## Database Setup
+Setup should look like this:
+
+<img width="924" alt="Screenshot 2025-04-02 at 8 14 30 PM" src="https://github.com/user-attachments/assets/28d38f8b-58a0-421f-a9cc-b7ad577388c3" />
+
+### Database Setup
+Log into MySQL server on terminal:
+
+```
+mysql -u root -p
+```
+
 Create the database:
 
-sql
-Copy
-Edit
-CREATE DATABASE Auto;'''
+```sql
+CREATE DATABASE Auto;
+```
+
 Switch to the database:
 
-sql
-Copy
-Edit
+```sql
 USE Auto;
+```
+
 Create the mpg table:
 
-sql
-Copy
-Edit
+```sql
 CREATE TABLE mpg (
-    id INT AUTO_INCREMENT PRIMARY KEY,
     mpg VARCHAR(10),
-    cylinder INT,
+    cylinder VARCHAR(10,
     displacement VARCHAR(10),
     horsepower VARCHAR(10),
     weight VARCHAR(10),
@@ -49,25 +56,26 @@ CREATE TABLE mpg (
     origin VARCHAR(10),
     name VARCHAR(255)
 );
-Update database credentials in the Java code:
-
+```
 Modify the MySQL connection settings in Main.java:
 
-java
-Copy
-Edit
+```java
 Connection connection = DriverManager.getConnection(
-    "jdbc:mysql://localhost/Auto", "root", "your_password");
-Running the Application
+    "jdbc:mysql://localhost/Auto", "root", "password");
+```
+
+## Running the Application
 Compile and Run:
 
-sh
-Copy
-Edit
-javac Main.java
-java Main
-Interact with the GUI:
+```
+javac ".:mysql-connector-j-version.jar" Main.java
+java ".:mysql-connector-j-version.jar" Main.java
+```
 
-Use the sliders or input fields to set MPG and horsepower values.
+### Interact with the GUI:
+
+Use the sliders to set mpg and horsepower values.
+
+In the text box, type "find" to retrieve specific records or type "all" to retrieve the entire dataset
 
 Click Find to retrieve matching records from the database.

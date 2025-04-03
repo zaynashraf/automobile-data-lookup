@@ -67,6 +67,14 @@ Connection connection = DriverManager.getConnection(
 Change "root" and "password" to your MySQL username and password
 
 ## Running the Application
+Change current directory
+
+```
+cd /file/path
+```
+
+Change "file" and "path" to the file path which contains the folder which stores your Java file
+
 Compile and Run:
 
 ```
@@ -83,3 +91,6 @@ Use the sliders to set mpg and horsepower values.
 In the text box, type "find" to retrieve specific records or type "all" to retrieve the entire dataset
 
 Click Find to retrieve matching records from the database.
+
+<img width="416" alt="Screenshot 2025-04-02 at 8 42 21 PM" src="https://github.com/user-attachments/assets/5527cf02-9b64-43b1-8a6e-1d703e68f0cd" />
+

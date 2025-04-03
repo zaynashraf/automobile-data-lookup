@@ -64,13 +64,17 @@ Connection connection = DriverManager.getConnection(
     "jdbc:mysql://localhost/Auto", "root", "password");
 ```
 
+Change "root" and "password" to your MySQL username and password
+
 ## Running the Application
 Compile and Run:
 
 ```
-javac ".:mysql-connector-j-version.jar" Main.java
-java ".:mysql-connector-j-version.jar" Main.java
+javac -cp ".:mysql-connector-j-version.jar" Main.java
+java -cp ".:mysql-connector-j-version.jar" Main.java
 ```
+
+Change "version" to your MySQL connector version number
 
 ### Interact with the GUI:
 

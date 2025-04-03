@@ -229,7 +229,7 @@ public class Main extends JFrame implements ActionListener, ChangeListener
     {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection
-                ("jdbc:mysql://localhost/Auto", "testuser", "greatbutter494");
+                ("jdbc:mysql://localhost/Auto", "root", "greatbutter494");
         Statement statement = connection.createStatement();
 
         ResultSet resultSet = statement.executeQuery

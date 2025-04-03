@@ -208,7 +208,7 @@ public class Main extends JFrame implements ActionListener, ChangeListener
     {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection
-                ("jdbc:mysql://localhost/Auto", "root", "greatbutter494");
+                ("jdbc:mysql://localhost/Auto", "root", "password");
         Statement statement = connection.createStatement();
 
         ResultSet resultSet = statement.executeQuery
@@ -229,7 +229,7 @@ public class Main extends JFrame implements ActionListener, ChangeListener
     {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection
-                ("jdbc:mysql://localhost/Auto", "root", "greatbutter494");
+                ("jdbc:mysql://localhost/Auto", "root", "password");
         Statement statement = connection.createStatement();
 
         ResultSet resultSet = statement.executeQuery
@@ -255,7 +255,7 @@ public class Main extends JFrame implements ActionListener, ChangeListener
         System.out.println("Driver loaded");
 
         Connection connection = DriverManager.getConnection
-                ("jdbc:mysql://localhost/Auto", "root", "greatbutter494");
+                ("jdbc:mysql://localhost/Auto", "root", "password");
         System.out.println("Database connected");
 
         Statement statement = connection.createStatement();

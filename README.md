@@ -66,7 +66,7 @@ Connection connection = DriverManager.getConnection(
 
 Change "root" and "password" to your MySQL username and password
 
-## Running the Application
+## How to Run
 Change current directory
 
 ```

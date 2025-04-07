@@ -1,6 +1,6 @@
 # Automobile Data Lookup System
 ## Overview
-This Java-based GUI application allows users to search and filter automobile data based on miles per gallon (mpg) and horsepower values. It reads from a file and stores that data into a MySQL table, where the automobile data is stored and managed. The program provides a user-friendly interface with sliders and input fields to refine search queries and retrieve relevant automobile records.
+This Java-based GUI application allows users to search and filter automobile data from the Auto MPG Dataset based on miles per gallon (mpg) and horsepower values. It reads from a file and stores that data into a MySQL table, where the automobile data is stored and managed. The program provides a user-friendly interface with sliders and input fields to refine search queries and retrieve relevant automobile records.
 
 ## Features
 GUI Interface: Built using Swing, featuring sliders for mpg and horsepower selection.
